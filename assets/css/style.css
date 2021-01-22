@@ -108,31 +108,36 @@ header img {
 
 /* footer */
 
-.footer-logo{
+.footer-logo {
     width: 60px;
     height: 60px;
 }
-.social{
+
+.social {
     display: flex;
     justify-content: space-around;
     width: 80%;
     max-width: 320px;
     margin-top: 16px;
 }
-.social a{
+
+.social a {
     display: block;
 }
-.social img{
+
+.social img {
     width: 25px;
     height: 25px;
 }
-.faq, .privacy, .install{
+
+.faq, .privacy, .install {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 32px;
 }
-#principal li, #principal li a{
+
+#principal li, #principal li a {
     list-style: none;
     text-decoration: none;
     color: hsl(210, 10%, 33%);
@@ -149,4 +154,54 @@ header img {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width:688px) {
+    .buttons {
+        flex-direction: row;
+    }
+    .btn{
+
+        margin-right: 6px;
+        margin-left: 6px;
+    }
+    /*SERVICES*/
+    .services .container{
+        flex-direction: row;
+    }
+    .services img{
+        width: 60%;
+    }
+    .services-info{
+        margin-left: 20px;
+    }
+    .services-info p, .services-info h2{
+        text-align: left;
+    }
+    .services-info p {
+        font-size: 12px;
+    }
+    .services-info h2{
+        font-size: 22px;
+    }
+
+    /*WORKFLOW*/
+    .workflow-card{
+        display: flex;
+        flex-direction: row;
+    }
+    .card{
+        flex: 1;
+        margin-top: 12px;
+    }
+
+    /*EMPRESAS*/
+
+    .empresas .container{
+        flex-direction: row;
+    }
+    .empresas img{
+        margin: 6px;
+        max-width: 20%;
+    }
 }
